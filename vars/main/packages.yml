@@ -18,6 +18,7 @@ _jenkins_packages_install:
   Fedora_31:
     - java
     - initscripts
+    # - chkconfig
   Debian_10:
     - default-jdk
   Ubuntu_18:
