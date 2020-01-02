@@ -33,6 +33,7 @@
           - gnupg
           - gnupg-agent
           - software-properties-common
+          - apt-utils
         state: present
 
     - name: apt gpg key is present

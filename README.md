@@ -23,12 +23,14 @@ Role Variables
 --------------
 
 ```yaml
-jenkins_remove_packages: true
+jenkins_service_port: 8081
+jenkins_display_admin_password: true
 jenkins_enable_service: true
 jenkins_enable_selinux: true
+jenkins_copy_templates: true
 jenkins_firewall_configure: true
 jenkins_firewall_rules:
-  - service:
+  - port: 8081
 ```
 
 Dependencies
@@ -51,11 +53,14 @@ Example Playbook
       import_role:
         name: crivetimihai.jenkins
       vars:
-        jenkins_remove_packages: true
+        jenkins_service_port: 8081
+        jenkins_display_admin_password: true
         jenkins_enable_service: true
+        jenkins_enable_selinux: true
+        jenkins_copy_templates: true
         jenkins_firewall_configure: true
         jenkins_firewall_rules:
-          - service:
+          - port: 8081
       tags: jenkins
 ```
 

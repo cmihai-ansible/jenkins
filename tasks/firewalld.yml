@@ -28,5 +28,5 @@
   loop: "{{ jenkins_firewall_rules }}"
   notify: reload firewalld
   become: true
-  when: "jenkins_firewall_configure"
+  when: jenkins_firewall_configure
   tags: notest

@@ -32,5 +32,6 @@
 - include: template.yml
 - include: configure.yml
 - include: firewalld.yml
+  when: jenkins_firewall_configure
 - include: password.yml
   when: jenkins_display_admin_password

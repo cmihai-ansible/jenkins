@@ -11,11 +11,11 @@ _jenkins_repos_create:
   Fedora_31: []
   Debian_10:
     - repo: "deb https://pkg.jenkins.io/debian-stable binary/"
-      key: "https://pkg.jenkins.io/debian/jenkins.io.key"
+      gpgkey: "https://pkg.jenkins.io/debian/jenkins.io.key"
       filename: "/etc/apt/sources.list.d/jenkins.list"
   Ubuntu_18:
     - repo: "deb https://pkg.jenkins.io/debian-stable binary/"
-      key: "https://pkg.jenkins.io/debian/jenkins.io.key"
+      gpgkey: "https://pkg.jenkins.io/debian/jenkins.io.key"
       filename: "/etc/apt/sources.list.d/jenkins.list"
 
 # Repo files to download
