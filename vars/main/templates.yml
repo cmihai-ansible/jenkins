@@ -17,8 +17,6 @@ _jenkins_templates_copy:
   Fedora_31:
     - src: jenkins.redhat
       dest: /etc/sysconfig/jenkins
-    - src: jenkins.service
-      dest: /etc/systemd/system/jenkins.service
   Debian_10:
     - src: jenkins.debian
       dest: /etc/default/jenkins
