@@ -1,0 +1,14 @@
+---
+# Install packages
+_jenkins_packages_install:
+  all:
+    - jenkins
+    - java
+    - initscripts
+  CentOS_7: []
+  RedHat_7: []
+  CentOS_8: []
+  RedHat_8: []
+  Fedora_31: []
+  Debian_10: []
+  Ubuntu_18: []
